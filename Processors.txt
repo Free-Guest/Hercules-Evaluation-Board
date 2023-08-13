@@ -1,0 +1,19 @@
+List of semiconductor vision processor vendors
+- Qualcomm
+- Texas Instruments
+- Intel
+- Nvidia
+- Xilinx
+- Arm based Mali GPU https://en.wikipedia.org/wiki/Mali_(processor)#Mali_video_processors
+- NXP
+- Microchip
+- Samsung
+- Need to look at some devboards/application solutions for mid/high bandwith video applications
+
+Things to consider when selecting a processor
+1. Availability
+2. Has the interfaces I need
+3. Does this include a fgpa?
+4. Price, is this something I can get a sample of?
+5. Software support, are there libraries available and plenty of documentation?
+6. Hardware support, libraries available, good documentation and references?
