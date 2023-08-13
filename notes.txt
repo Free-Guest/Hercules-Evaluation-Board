@@ -1,0 +1,5 @@
+*TODO*
+1. Redo block diagram and high level requirements
+2. Identify and prototype a video processor architecture
+3. Split project into two boards, a black plane and cpu board
+4. Continue research on different interfaces and topologies to determine which ones are actually necessary
