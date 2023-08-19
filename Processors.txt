@@ -17,3 +17,49 @@ Things to consider when selecting a processor
 4. Price, is this something I can get a sample of?
 5. Software support, are there libraries available and plenty of documentation?
 6. Hardware support, libraries available, good documentation and references?
+7. Performance of the device, it is always best to select the highest performance, cheapest cost processor possible. 
+
+General Processor Selection 
+
+*What to research from here:
+- Arm vs x86 designs (cpu architecture)
+- Measures of cpu performance (flops, terps, etc)
+- How package types, silicon wafer process, etc effects performance
+- How gpus, ipus, etc can help benefit performance for difference applications
+- Memory interfacing (NvLink, etc) 
+- CPU caching
+*
+
+- The number of cores is a determining factor when selecting the correct processor. Generally, the number of cores available will mean an increase in performance and processing capability. Some cores on a processor have different applications. Some can be dedicated to general compute or more specialized computing like graphics, video, audio, machine learning, etc. This is an important consideration becuase the addition of these cores can help increase the performanace of the system based on the application.
+
+- Threads are basically processes that a computer is able to process. The number of threads means more simultaneous instructions a computer can carry out each clock cycle. The more threads in parallel, the higher the compute capability the processor will have. Multithreading when a processor can have multiple simultaneous threads each carrying out instructions. The type of threading technology is an important consideration for picking a processor. 
+
+- The number of threads per core increaseas the amount of instructions and computational tasks a cpu can perform.
+
+- Clock speed is also important, generally, the higher the clock speed, the faster the processor is. There are disadvantages though in terms of signal integrity as the higher the clock speed, the more at risk a design is in terms of signal integrity. In general, a higher clock speed and more parallel threads per core means more processing ability. Most modern high performance processors can run anywhere between 1 to 4 GHz. An important factor to consider with clock speed is the processors instructions per clock cycle or IPC value. Multiply this by the clock frequency and this tells you how many instructions can be carried out on each clock cycle. It is important to wheigh the avaialbility of throttling or sleep modes for cores that are not in use to reduce power consumption.
+
+- CPUs get hot and require cooling to perform correctly and prevent damage. Being aware of the thermal capability of a processor is important. This can be temperature ranges, temperature counter measures, manufacturer support and documentation, etc.
+
+- The architecture of the processor has many different trade offs. Generally most cpus are x86 based architecture, this is the preferred architecture if running windows. However Arm based processors remain popular due to their simpler instructions set, being lower power, and easily licensed meaning more vendors and options. Arm processors suffer due to the lack of software available due to most application level software being targetted for windows based systems meaning that more design effort in terms of software must be done for arm based processors. These processors can run linux instead of windows. 
+
+- The type of IO the device supports is an important consideration when selecting a processor. Processors can support a range of connection including offboard connector, inter board communications, memory interfacing. The types of connections and speeds of these connections will play an important role in selecting the corrent processor. 
+
+- Package type and technology
+
+- Cost per unit
+
+- Sourcing availability
+
+- Based on the type of processor this is will play a role into the selection. If there are other processors on the same system that will help offload compute or system management will play a role in processor selection
+
+- Application Specific (Aerospace, ASIC, etc)
+
+- Documenation and hardware/software tool support and integration. The more available documentation and support for hardware-software integration helps minimize risk for designing a system around a cpu
+
+- Overall, the primary goal should be to pick the highest performaning cpu with the capability necessary for the application while reducing risk for a design. Risk includes design complexity, sourcing, added costs, etc. This means selecting the highest performance, easiest to use, and cheapest solution available. Cost may not matter as much for the application. 
+
+
+
+
+
+
