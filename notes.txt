@@ -1,5 +1,9 @@
 *TODO*
 1. Redo block diagram and high level requirements
 2. Identify and prototype a video processor architecture
-3. Split project into two boards, a black plane and cpu board
+  a. Found processor architecture. Will use a soc with fpga and processor for one comptuer module. 
+  For this unit, I will use either the zynq 7000 or the microcip microblaze.
+  For the second processor board, I'll use a qualcomm snapdragon based processor with an additional fgpa on it to compare the 
+  performance and cost between the two. 
+3. Split project into two boards, a back plane and cpu board
 4. Continue research on different interfaces and topologies to determine which ones are actually necessary
