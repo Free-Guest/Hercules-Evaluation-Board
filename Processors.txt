@@ -9,6 +9,9 @@ List of semiconductor vision processor vendors
 - Microchip
 - Samsung
 - Need to look at some devboards/application solutions for mid/high bandwith video applications
+- Sony
+- Omnivision
+- Onsemi
 
 Things to consider when selecting a processor
 1. Availability
