@@ -58,8 +58,9 @@ General Processor Selection
 
 - Overall, the primary goal should be to pick the highest performaning cpu with the capability necessary for the application while reducing risk for a design. Risk includes design complexity, sourcing, added costs, etc. This means selecting the highest performance, easiest to use, and cheapest solution available. Cost may not matter as much for the application. 
 
+FPGA
 
-
+- For an fpga, pick the lowest cost, easiet ecosystem fpga with 12Gbps serdes channels
 
 
 
