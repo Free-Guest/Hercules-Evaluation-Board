@@ -1,0 +1,24 @@
+FPGA Module
+Manufacturer: AMD Xilinx
+Product Family: Artix Ultrascale
+Device Name: AU10P
+Datasheet: https://docs.xilinx.com/v/u/en-US/ds890-ultrascale-overview
+https://docs.xilinx.com/v/u/en-US/ultrascale-plus-fpga-product-selection-guide
+Purchase Link: https://www.win-source.net/products/detail/amd/xcau10p-1ffvb676e.html
+
+Processor Module 1
+Manufacturer: Renesas
+Product Family: RZ 64 bit MPU
+Device Name: RZ/G2L
+Datasheet: 
+Purchase Link: https://www.renesas.com/us/en/products/microcontrollers-microprocessors/rz-mpus/rzg2l-general-purpose-microprocessors-dual-core-arm-cortex-a55-12-ghz-cpus-and-single-core-arm-cortex-m33
+
+Processor Module 2
+TBD
+
+Control Plane BMC
+Manufacturer:
+Product Family:
+Device Name:
+Datasheet:
+Purchase Link: 
