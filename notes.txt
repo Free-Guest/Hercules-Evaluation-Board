@@ -7,3 +7,25 @@
   performance and cost between the two. 
 3. Split project into two boards, a back plane and cpu board
 4. Continue research on different interfaces and topologies to determine which ones are actually necessary
+
+Update 9/16/2023
+Finished selections on processors, will need to select a mcu but want to keep the cost under $2. The performance is not necessary but the option to run a rtos on it is helpful.
+There will be two modules one for the main processor and the other for the fpga. Modules are done for versatility so that if there is a mistake, I won't have to respin the entire
+design again. The idea is to spin the backplane/main board first which will include the mcu to help with bring up and verifying correct operation of this board. Next is the fpga module which will plug into the main board using pcie, mezzanine, or something similar. The third will be the main processor which will run linux. 
+
+The things left to do on processor archiecture is to do a design tradeoff between implementing the control plane on the fpga vs just using a mcu for this. Some of the tradeoff are cost in terms of layer count, routing, and just purchasing an extra part. Increased hardware development time. And increased software development effort where I will need to learn RTOS and implement the control software on the mcu in addition to the fpga and main processor. Also will need to select the right mcu for the qualifications correctly
+
+Current architecture is as follows: 
+Main board which includes power, video In, Video Out/displays, connectors for processors, serial communications, and mcu
+FPGA Module includes POL converters for fpga, ddr4 memory, flash memory, and connections to IO
+Processor module includes POL conveters for processor, ddr4 memory, flash memory, and connections to IO
+
+MCU on the main board will determine the presence of the Fpga, processor, both, or neither. It will set a operational mode for depending on what is connected to the main board. 
+If no fpga or processor connected, serial comms are muxed to mcu, and all I/O are disabled
+If only fpga is connected then the mcu will set the FPGA into main processor mode. This mode means all the processing and IO connections will be muxed to the fpga to handle the processing
+If only the processor is connected, then the connections that the processor can handle will be muxed to it and the other connections will be left disabled 
+If both the fpga and processor are connected, then the processor will be the master and the fpga will be a slave. Depending on software overhead and IO connections, the fpga will offload 
+most of the processing with the IO and the processor will just be used to control this
+
+Depending on how hardware development goes, it might be possible to eliminate one of these modules to have it directly on the main board. TBD
+
