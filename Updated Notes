@@ -1,0 +1,8 @@
+12/7/2023
+Currently working on finishing high level architecture and block diagrams. 
+Need to finish part selection for cpu board. This includes nor flash, emmc, ethernet phy, clocking, DDR4 and power. Will evaluate if adding ssd is possible.
+Current sizes for memory are 16 MB NOR Flash, 4 GB eMMMC, 2 GB DDR, with option to go higher with future revisions
+Need to check data sheet for ethernet phy
+Need to check data sheet for clocking requirements
+Need to check data sheet for power requirements
+
